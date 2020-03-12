@@ -76,6 +76,9 @@ PRODUCT_PACKAGES += \
     init.recovery.qcom.sh \
     init.dagu.rc
 
+# Dex
+PRODUCT_DEX_PREOPT_DEFAULT_COMPILER_FILTER := everything
+
 # fastbootd
 PRODUCT_PACKAGES += \
     android.hardware.fastboot@1.0-impl-mock \
