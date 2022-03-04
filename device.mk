@@ -46,7 +46,6 @@ AB_OTA_POSTINSTALL_CONFIG += \
 
 # Audio
 PRODUCT_PACKAGES += \
-    audio.a2dp.default \
     libaacwrapper
 
 PRODUCT_COPY_FILES += \
