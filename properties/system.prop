@@ -2,6 +2,9 @@
 dalvik.vm.dex2oat-filter=everything
 dalvik.vm.image-dex2oat-filter=everything
 
+# Enable system-side generic bluetooth audio HAL
+persist.bluetooth.system_audio_hal.enabled=1
+
 # Camera
 vendor.camera.aux.packagelist=org.codeaurora.snapcam,com.android.camera
 
