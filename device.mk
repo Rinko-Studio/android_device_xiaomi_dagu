@@ -8,9 +8,6 @@ $(call inherit-product, vendor/xiaomi/dagu/dagu-vendor.mk)
 
 DAGU_PREBUILT := device/xiaomi/dagu-prebuilt
 
-# Enable updating of APEXes
-$(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
-
 # Installs gsi keys into ramdisk, to boot a GSI with verified boot.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/developer_gsi_keys.mk)
 
