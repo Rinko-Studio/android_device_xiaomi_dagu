@@ -4,9 +4,9 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-$(call inherit-product, vendor/xiaomi/nabu/nabu-vendor.mk)
+$(call inherit-product, vendor/xiaomi/dagu/dagu-vendor.mk)
 
-NABU_PREBUILT := device/xiaomi/nabu-prebuilt
+DAGU_PREBUILT := device/xiaomi/dagu-prebuilt
 
 # Enable updating of APEXes
 $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
@@ -73,7 +73,7 @@ PRODUCT_PACKAGES += \
     init.recovery.qcom.rc \
     init.recovery.usb.rc \
     init.recovery.qcom.sh \
-    init.thyme.rc
+    init.dagu.rc
 
 # fastbootd
 PRODUCT_PACKAGES += \
@@ -93,11 +93,11 @@ PRODUCT_PACKAGES += \
 
 # Kernel
 PRODUCT_COPY_FILES += \
-    $(NABU_PREBUILT)/kernel/dtb.img:dtb.img
+    $(DAGU_PREBUILT)/kernel/dtb.img:dtb.img
 
 # Lights
 PRODUCT_PACKAGES += \
-    android.hardware.lights-service.nabu
+    android.hardware.lights-service.dagu
 
 # Parts
 PRODUCT_PACKAGES += \
@@ -109,11 +109,11 @@ PRODUCT_PACKAGES += \
 
 # RRO Overlays
 PRODUCT_PACKAGES += \
-    FrameworkResOverlayNabu \
-    WifiResOverlayNabu \
-    SystemUIOverlayNabu \
-    SettingsProviderOverlayNabu \
-    SettingsOverlayNabu
+    FrameworkResOverlayDabu \
+    WifiResOverlayDabu \
+    SystemUIOverlayDabu \
+    SettingsProviderOverlayDabu \
+    SettingsOverlayDabu
 
 # Overlays - override vendor ones
 PRODUCT_PACKAGES += \
@@ -131,7 +131,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.perf@2.2
 # Power
 PRODUCT_PACKAGES += \
-    android.hardware.power-service.nabu
+    android.hardware.power-service.dagu
 
 # Properties
 include $(LOCAL_PATH)/properties/default.mk
@@ -161,4 +161,4 @@ PRODUCT_COPY_FILES += \
 
 # Vendor boot modules
 PRODUCT_COPY_FILES += \
-    $(call find-copy-subdir-files,*,$(NABU_PREBUILT)/modules/,$(TARGET_COPY_OUT_VENDOR_RAMDISK)/lib/modules)
+    $(call find-copy-subdir-files,*,$(DAGU_PREBUILT)/modules/,$(TARGET_COPY_OUT_VENDOR_RAMDISK)/lib/modules)

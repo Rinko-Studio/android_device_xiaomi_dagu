@@ -8,7 +8,7 @@
 
 set -e
 
-DEVICE=nabu
+DEVICE=dagu
 VENDOR=xiaomi
 
 # Load extract_utils and do some sanity checks

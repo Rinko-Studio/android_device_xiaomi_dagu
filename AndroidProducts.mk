@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/arrow_nabu.mk
+    $(LOCAL_DIR)/arrow_dagu.mk
 
 COMMON_LUNCH_CHOICES := \
-    arrow_nabu-eng \
-    arrow_nabu-userdebug \
-    arrow_nabu-user
+    arrow_dagu-eng \
+    arrow_dagu-userdebug \
+    arrow_dagu-user

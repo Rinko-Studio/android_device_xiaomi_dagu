@@ -9,7 +9,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base.mk)
 
 # Inherit device configurations
-$(call inherit-product, device/xiaomi/nabu/device.mk)
+$(call inherit-product, device/xiaomi/dagu/device.mk)
 
 # Inherit common LineageOS configurations
 $(call inherit-product, vendor/arrow/config/common.mk)
@@ -17,9 +17,11 @@ $(call inherit-product, vendor/arrow/config/common.mk)
 PRODUCT_CHARACTERISTICS := tablet
 
 PRODUCT_BRAND := Xiaomi
-PRODUCT_DEVICE := nabu
+PRODUCT_DEVICE := dagu
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_MODEL := 21051182G
-PRODUCT_NAME := arrow_nabu
+PRODUCT_NAME := arrow_dagu
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
+
+BUILD_FINGERPRINT := Xiaomi/dagu/dagu:12/SKQ1.220303.001/V13.1.6.0.SLZCNXM:user/release-keys
