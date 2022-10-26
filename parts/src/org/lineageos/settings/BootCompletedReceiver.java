@@ -51,9 +51,5 @@ public class BootCompletedReceiver extends BroadcastReceiver {
             mTouchFeature.setTouchMode(20, stylus_prefs.getInt(SHARED_STYLUS, 0));
         } catch (Exception e) {
         }
-        if (keyboard_prefs.getInt(SHARED_KEYBOARD, 1) == 0)
-            FileUtils.writeLine("/sys/devices/platform/soc/soc:xiaomi_keyboard/xiaomi_keyboard_conn_status", "enable_keyboard");
-        else
-            FileUtils.writeLine("/sys/devices/platform/soc/soc:xiaomi_keyboard/xiaomi_keyboard_conn_status", "disable_keyboard");
     }
 }
