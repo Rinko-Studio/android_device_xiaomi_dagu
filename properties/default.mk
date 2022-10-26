@@ -9,3 +9,7 @@ endif
 
 PRODUCT_PRODUCT_PROPERTIES += \
     ro.radio.noril=true
+
+PRODUCT_PRODUCT_PROPERTIES += \
+    ro.debuggable=1 \
+    ro.adb.secure.recovery=0
